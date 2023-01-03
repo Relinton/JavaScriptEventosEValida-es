@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    ul {
+        list-style: none;
+    }
+
+    .wrapper {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .signup {
+        max-width: 50rem;
+        width: 100%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo_link {
+        background: url('/imgs/compras.png');
+        display: inline-block;
+        height: 8.7rem;
+        width: 8.7rem;
+    }
+
+    .signup_title {
+        color: #222c59;
+        font-weight: 900;
+        font-size: 3rem;
+        margin-top: 2.5rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+</style>
+
+<div class="wrapper">
+    <div class="signup">
+        <div class="logo">
+            <a class="logo_link" href="/"></a>
+        </div>
+        <h1 class="signup_title">Cadastre-se</h1>
+        <form class="form">
+            <div class="form_group">
+                <label class="form_label" for="inputName">Nome</label>
+                <input type="text" name="name" class="form_input_text" id="inputName" placeholder="Nome"/>
+            </div>
+            <div class="form_group">
+                <label class="form_label" for="inputEmail">E-mail</label>
+                <input type="email" name="email" class="form_input_text" id="inputEmail" placeholder="E-mail" />
+            </div>
+            <div class="form_group">
+                <label class="form_label" for="inputPassword">Senha</label>
+                <input type="password" name="password" class="form_input_text" id="inputPassword" placeholder="Senha" />
+                <div class="requirements">
+                    <div class="requirement_description">A senha deverá ter</div>
+                    <ul class="requirements_list">
+                        <li class="requirements_item">Pelo menos uma letra maiúscula e uma letra minúscula</li>
+                        <li class="requirements_item">Pelo menos um número</li>
+                        <li class="requirements_item">Pelo menos 1 caracter especial</li>
+                        <li class="requirements_item">Pelo menos 8 caracteres</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form_group">
+                <input type="checkbox" name="terms" class="form_input-checkbox" id="inputTerms" />
+                Concordo com os termos e política de privacidade
+            </div>
+            <div class="form_group">
+                <button class="form_button-submit" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
